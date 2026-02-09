@@ -10,6 +10,11 @@ public class OnlineWorker extends Worker {
         return internet;
     }
 
+    @Deprecated
+    public double oldSalary(double hours) {
+        return hours * getPriceHour();
+    }
+
     @Override
     public double calculateSalary(double hours) {
         return super.calculateSalary(hours) + internet;
