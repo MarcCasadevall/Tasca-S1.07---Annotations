@@ -16,7 +16,9 @@ public class InPersonWorker extends Worker {
 
     @Deprecated
     public double oldSalary(double hours) {
+        System.out.println("obsolete method uses calculateSalary");
         return hours * getPriceHour();
+
     }
 
     @Override
