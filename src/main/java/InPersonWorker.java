@@ -1,9 +1,9 @@
 public class InPersonWorker extends Worker {
-    private static double fuel;
+    private double fuel;
 
     public InPersonWorker(String name, String lastName, double priceHour, double fuel) {
         super(name, lastName, priceHour);
-        InPersonWorker.fuel = fuel;
+        this.fuel = fuel;
     }
 
     public double getFuel() {
@@ -11,14 +11,13 @@ public class InPersonWorker extends Worker {
     }
 
     public void setFuel(double fuel) {
-        InPersonWorker.fuel = fuel;
+        this.fuel = fuel;
     }
 
     @Deprecated
     public double oldSalary(double hours) {
-        System.out.println("obsolete method uses calculateSalary");
-        return hours * getPriceHour();
-
+        System.out.println("obsolete method, use calculateSalary instead");
+        return calculateSalary(hours);
     }
 
     @Override
