@@ -1,17 +1,13 @@
 public class InPersonWorker extends Worker {
-    private double fuel;
 
-    public InPersonWorker(String name, String lastName, double priceHour, double fuel) {
+    private static double fuel = 15; //
+
+    public InPersonWorker(String name, String lastName, double priceHour) {
         super(name, lastName, priceHour);
-        this.fuel = fuel;
     }
 
-    public double getFuel() {
+    public static double getFuel() {
         return fuel;
-    }
-
-    public void setFuel(double fuel) {
-        this.fuel = fuel;
     }
 
     @Deprecated

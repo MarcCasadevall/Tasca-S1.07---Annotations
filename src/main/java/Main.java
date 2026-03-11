@@ -1,7 +1,7 @@
 @SuppressWarnings("deprecation")
 public class Main {
     public static void main(String[] args) {
-        Worker worker1 = new InPersonWorker("Pablo ", "Lopez", 10, 80);
+        Worker worker1 = new InPersonWorker("Pablo ", "Lopez", 10);
         Worker worker2 = new OnlineWorker("Pedro ", "Gonzalez", 12, 30);
 
         System.out.println(worker1.calculateSalary(40));

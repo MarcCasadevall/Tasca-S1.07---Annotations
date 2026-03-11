@@ -12,8 +12,8 @@ public class OnlineWorker extends Worker {
 
     @Deprecated
     public double oldSalary(double hours) {
-        System.out.println("obsolete method uses calculateSalary");
-        return hours * getPriceHour();
+        System.out.println("obsolete method, use calculateSalary instead");
+        return calculateSalary(hours);
     }
 
     @Override
